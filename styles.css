@@ -126,6 +126,7 @@ main {
     background-color: #ddd;
     border-radius: 10px;
     overflow: hidden;
+    border: 3px groove #007BFF ;
 }
 
 .image-item img {
