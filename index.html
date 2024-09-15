@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Share pic </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>SHARE pic</h1>
+        <p class="subtitle"> with friends </p>
+    </header>
+
+    <!-- Plus Icon to Show Upload Form -->
+    <section class="upload-section">
+        <button class="plus-icon" id="plus-icon" onclick="toggleUploadForm()">+</button>
+        <div class="upload-form" id="upload-form">
+            <button class="close-btn" onclick="toggleUploadForm()">×</button>
+            <input type="file" id="upload-input" accept="image/*">
+            <input type="text" id="caption-input" placeholder="Enter a caption">
+            <button class="btn" onclick="uploadImage()">Post Image</button>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <main>
+        <div class="gallery" id="gallery"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mobile Share Pic </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

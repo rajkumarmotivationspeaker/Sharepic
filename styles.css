@@ -1,0 +1,189 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0080FF;
+    color: yellow ;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+/* Plus Icon */
+.plus-icon {
+    font-size: 30px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+    transition: background-color 0.3s ease;
+}
+
+.plus-icon:hover {
+    background-color: #0056b3;
+}
+
+/* Hidden Upload Form */
+.upload-form {
+    display: none; /* Start hidden */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 250px;
+}
+
+.upload-form input[type="file"],
+.upload-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Close Button */
+.close-btn {
+    font-size: 20px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Main Gallery Section */
+main {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.image-item {
+    position: relative;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-item img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Caption */
+.caption {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Like Button */
+.like-button {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like-button.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+.like-button:active {
+    transform: scale(0.9);
+}
+
+.like-icon {
+    margin-right: 5px;
+}
+
+.like-count {
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: #0080FF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+.subtitle{
+	float: right;
+	margin-top: -10px;
+	font-weight: bold;
+	color: #08F7FF ;
+}
